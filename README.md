@@ -37,6 +37,8 @@ npm run typecheck
 npm run build
 ```
 
+CI runs typecheck and production build on every push to `main` and on pull requests.
+
 ## Stack
 
 - Next.js App Router
