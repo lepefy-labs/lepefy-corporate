@@ -11,6 +11,6 @@ export default function AboutPage() {
       <article className="card"><span className="num">03</span><h3>Modular by design</h3><p>Preferiamo basi coerenti e componenti riusabili alla proliferazione di soluzioni isolate.</p></article>
       <article className="card"><span className="num">04</span><h3>Human in the loop</h3><p>L’automazione deve aiutare le persone, non obbligarle ad adattarsi al software.</p></article>
     </div></div></section>
-    <section className="section sectionDark"><div className="container"><div className="kicker">Founder</div><div className="founder"><div className="founderMark"><img src="/lepefy-mark.svg" alt="Lepefy Labs" /></div><div><h3>Robertin Boukeng</h3><div className="role">Founder · Lepefy Labs</div><p>Lepefy Labs nasce dall’idea che un prodotto digitale debba partire da una necessità reale e diventare progressivamente più semplice, solido e utile attraverso l’uso concreto.</p><a href="/robertin">Digital business card →</a></div></div></div></section>
+    <section className="section sectionDark"><div className="container"><div className="kicker">Founder</div><div className="founder"><div className="founderMark"><img src="/lepefy-mark.svg" alt="Lepefy Labs" /></div><div><h3>Robertin Boukeng</h3><div className="role">Founder · Lepefy Labs</div><p>Lepefy Labs nasce dall’idea che un prodotto digitale debba partire da una necessità reale e diventare progressivamente più semplice, solido e utile attraverso l’uso concreto.</p><a href="/founder">Digital business card →</a></div></div></div></section>
   </>;
 }
