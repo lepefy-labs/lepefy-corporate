@@ -9,7 +9,7 @@ Lepefy Labs is the master brand. The website must present:
 - Lepefy Labs as a builder of intelligent digital products and tailored solutions for real-world needs.
 - Lepefy Commerce as the flagship SaaS platform for modern food businesses.
 - Future products from Lepefy Labs without coupling the corporate brand to a single vertical.
-- Robertin Boukeng as Founder, with a digital business-card experience at `/robertin`.
+- The Lepefy Labs Founder profile, with a branded digital business-card experience at `/founder`.
 
 ## Product principles
 
@@ -52,8 +52,10 @@ Initial public routes:
 - `/commerce` — Lepefy Commerce
 - `/about` — Lepefy Labs and founder
 - `/contact` — Contact entry point
-- `/robertin` — Founder digital business card
-- `/robertin.vcf` — Downloadable vCard
+- `/founder` — Branded Founder digital business card
+- `/founder.vcf` — Downloadable branded Founder vCard
+
+Legacy `/robertin` routes should only exist as redirects for backward compatibility.
 
 Do not add speculative product routes until there is enough real content to support them.
 
