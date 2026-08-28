@@ -1,3 +1,6 @@
-import { notFound } from 'next/navigation';
-import { getCopy, isLocale } from '../../../lib/i18n';
-export default function Page({params}:{params:{locale:string}}){if(!isLocale(params.locale))notFound();const l=params.locale,c=getCopy(l).founder;return <section className="digitalWrap"><div className="digitalCard"><div className="digitalTop"><img src="/lepefy-mark.svg" alt=""/><strong>Lepefy Labs</strong></div><h1>{c.title}</h1><div className="role">{c.role}</div><div className="contactList"><a href="tel:+393278551293">+39 327 855 1293</a><a href="mailto:robertin.smartinvestor@gmail.com">robertin.smartinvestor@gmail.com</a><a href="https://www.lepefy.com">www.lepefy.com</a><a href="https://www.facebook.com/lepefy" target="_blank" rel="noreferrer">facebook.com/lepefy</a></div><div className="digitalActions"><a className="button buttonPrimary" href="/founder.vcf" download>{c.save}</a><a className="button buttonSecondary" href={`/${l}`}>{c.back}</a></div></div></section>}
+import { redirect } from 'next/navigation';
+import { isLocale } from '../../../lib/i18n';
+
+export default function FounderRedirect({ params }: { params: { locale: string } }) {
+  redirect(`/${isLocale(params.locale) ? params.locale : 'fr'}/card`);
+}
