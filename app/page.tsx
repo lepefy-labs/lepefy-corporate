@@ -122,7 +122,7 @@ export default function HomePage() {
               <h3>Robertin Boukeng</h3>
               <div className="role">Founder · Lepefy Labs</div>
               <p>Costruire tecnologia utile significa capire prima il problema, poi progettare il sistema più semplice e solido per risolverlo. Lepefy Labs nasce con questa logica.</p>
-              <a href="/robertin">Apri la digital business card →</a>
+              <a href="/founder">Apri la digital business card →</a>
             </div>
           </div>
         </div>
