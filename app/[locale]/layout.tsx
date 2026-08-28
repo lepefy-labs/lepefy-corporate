@@ -18,7 +18,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     description: descriptions[params.locale],
     alternates: {
       canonical: `/${params.locale}`,
-      languages: { 'fr-FR': '/fr', 'en': '/en', 'it-IT': '/it', 'x-default': '/fr' },
+      languages: { 'fr-FR': '/fr', en: '/en', 'it-IT': '/it', 'x-default': '/fr' },
     },
   };
 }
@@ -60,10 +60,10 @@ export default function LocaleLayout({ children, params }: { children: React.Rea
         <div className="container footerGrid">
           <div><a className="brand footerBrand" href={`/${locale}`}><img src="/lepefy-mark.svg" alt="" /><span>Lepefy Labs</span></a><p>{c.footer.tagline}</p></div>
           <div className="footerLinks">
-            <a href={`/${locale}/solutions`}>{c.footer.solutions}</a><a href={`/${locale}/commerce`}>{c.footer.commerce}</a><a href={`/${locale}/about`}>{c.footer.about}</a><a href={`/${locale}/founder`}>{c.footer.founder}</a><a href={`/${locale}/contact`}>{c.footer.contact}</a>
+            <a href={`/${locale}/solutions`}>{c.footer.solutions}</a><a href={`/${locale}/commerce`}>{c.footer.commerce}</a><a href={`/${locale}/about`}>{c.footer.about}</a><a href={`/${locale}/contact`}>{c.footer.contact}</a>
           </div>
         </div>
-        <div className="container footerBottom">© {new Date().getFullYear()} Lepefy Labs</div>
+        <div className="container footerBottom">© {new Date().getFullYear()} Lepefy Labs · <a href="mailto:ciao@lepefy.it">ciao@lepefy.it</a></div>
       </footer>
     </>
   );
