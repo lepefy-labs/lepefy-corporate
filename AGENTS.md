@@ -24,6 +24,17 @@ Lepefy Labs is the master brand. The website must present:
 9. Chloe Food may be used only as a real-world ecosystem example when the claim is supported by current Lepefy project context.
 10. Avoid fake screenshots or fabricated product UI. Prefer abstract product diagrams until real assets are available.
 
+## Languages and routing
+
+- Public website languages: **French, English, Italian**.
+- French is the default language.
+- Canonical localized prefixes are `/fr`, `/en`, `/it`.
+- `/` redirects permanently to `/fr`.
+- Unprefixed legacy public routes redirect to their `/fr/...` equivalent.
+- Language switching should preserve the current page whenever that localized route exists.
+- Keep each localized page internally consistent. Do not mix French, English and Italian body copy on the same page except product names, trademarks or intentionally untranslated brand terms.
+- Provide hreflang alternates for FR/EN/IT and `x-default` pointing to French.
+
 ## Technical direction
 
 - Next.js App Router
@@ -45,15 +56,15 @@ Lepefy Labs is the master brand. The website must present:
 
 ## Information architecture
 
-Initial public routes:
+Localized public routes live below `/{locale}`:
 
-- `/` — Corporate homepage
-- `/solutions` — Tailored solutions / methodology
-- `/commerce` — Lepefy Commerce
-- `/about` — Lepefy Labs and founder
-- `/contact` — Contact entry point
-- `/founder` — Branded Founder digital business card
-- `/founder.vcf` — Downloadable branded Founder vCard
+- `/{locale}` — Corporate homepage
+- `/{locale}/solutions` — Tailored solutions / methodology
+- `/{locale}/commerce` — Lepefy Commerce
+- `/{locale}/about` — Lepefy Labs and founder
+- `/{locale}/contact` — Contact entry point
+- `/{locale}/founder` — Branded Founder digital business card
+- `/founder.vcf` — Language-neutral downloadable branded Founder vCard
 
 Legacy `/robertin` routes should only exist as redirects for backward compatibility.
 
