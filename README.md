@@ -11,7 +11,7 @@ The corporate website presents:
 - Lepefy Labs as the master brand.
 - Tailored digital products, platforms and automation.
 - **Lepefy Commerce** as the flagship SaaS platform for modern food businesses.
-- Robertin Boukeng as Founder, including a digital business card and downloadable vCard.
+- The Lepefy Labs Founder profile, including a branded digital business card and downloadable vCard.
 
 ## Routes
 
@@ -20,8 +20,10 @@ The corporate website presents:
 - `/commerce` — Lepefy Commerce
 - `/about` — Company principles and founder
 - `/contact` — Contact entry point
-- `/robertin` — Founder digital business card
-- `/robertin.vcf` — Downloadable vCard with embedded Lepefy contact image
+- `/founder` — Branded Founder digital business card
+- `/founder.vcf` — Downloadable vCard with embedded Lepefy contact image
+
+Legacy `/robertin` and `/robertin.vcf` routes redirect permanently to the branded Founder routes.
 
 ## Development
 
