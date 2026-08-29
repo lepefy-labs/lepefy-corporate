@@ -1,5 +1,5 @@
 import { permanentRedirect } from 'next/navigation';
 
-export default function RobertinPage() {
-  permanentRedirect('/founder');
+export default function LegacyContactRedirect() {
+  permanentRedirect('/fr/card');
 }
