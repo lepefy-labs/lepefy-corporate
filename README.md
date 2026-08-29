@@ -11,19 +11,30 @@ The corporate website presents:
 - Lepefy Labs as the master brand.
 - Tailored digital products, platforms and automation.
 - **Lepefy Commerce** as the flagship SaaS platform for modern food businesses.
-- The Lepefy Labs Founder profile, including a branded digital business card and downloadable vCard.
+- A brand-only public identity, without founder or personal-profile positioning.
 
-## Routes
+## Languages
 
-- `/` — Corporate homepage
-- `/solutions` — Tailored solutions and methodology
-- `/commerce` — Lepefy Commerce
-- `/about` — Company principles and founder
-- `/contact` — Contact entry point
-- `/founder` — Branded Founder digital business card
-- `/founder.vcf` — Downloadable vCard with embedded Lepefy contact image
+- French is the default language.
+- Localized routes use `/fr`, `/en`, `/it`.
+- `/` redirects to `/fr`.
 
-Legacy `/robertin` and `/robertin.vcf` routes redirect permanently to the branded Founder routes.
+## Main routes
+
+- `/{locale}` — Corporate homepage
+- `/{locale}/solutions` — Tailored solutions and methodology
+- `/{locale}/commerce` — Lepefy Commerce
+- `/{locale}/about` — Company principles
+- `/{locale}/contact` — Corporate contact
+- `/{locale}/card` — Lepefy Labs digital contact card
+- `/card.vcf` — Downloadable Lepefy Labs vCard with embedded brand image
+
+Legacy founder/personal routes are retained only as redirects to the brand contact card for backward compatibility.
+
+## Corporate contact
+
+- `ciao@lepefy.it`
+- `https://www.lepefy.com`
 
 ## Development
 
