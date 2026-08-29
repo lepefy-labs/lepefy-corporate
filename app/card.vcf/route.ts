@@ -18,6 +18,7 @@ export async function GET() {
     'N:Labs;Lepefy;;;',
     'FN:Lepefy Labs',
     'ORG:Lepefy Labs',
+    'TEL;TYPE=CELL:+393278551293',
     'EMAIL;TYPE=INTERNET:ciao@lepefy.it',
     'URL:https://www.lepefy.com',
     'URL;TYPE=Facebook:https://www.facebook.com/lepefy',

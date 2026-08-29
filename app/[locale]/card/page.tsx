@@ -18,6 +18,7 @@ export default function CardPage({ params }: { params: { locale: string } }) {
         <h1>Lepefy Labs</h1>
         <div className="role">{c.subtitle}</div>
         <div className="contactList">
+          <a href="tel:+393278551293">+39 327 855 1293</a>
           <a href="mailto:ciao@lepefy.it">ciao@lepefy.it</a>
           <a href="https://www.lepefy.com">www.lepefy.com</a>
           <a href="https://www.facebook.com/lepefy" target="_blank" rel="noreferrer">facebook.com/lepefy</a>
