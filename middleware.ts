@@ -1,14 +1,27 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { defaultLocale, isLocale } from './lib/i18n';
 
-const legacyRoutes = new Set(['/solutions', '/commerce', '/about', '/contact', '/founder']);
+const localizedLegacyRoutes = new Set(['/solutions', '/commerce', '/about', '/contact', '/card']);
+const personalLegacyRoutes = new Set(['/founder', '/robertin']);
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (pathname === '/' || legacyRoutes.has(pathname)) {
+  if (pathname === '/') {
     const url = request.nextUrl.clone();
-    url.pathname = pathname === '/' ? `/${defaultLocale}` : `/${defaultLocale}${pathname}`;
+    url.pathname = `/${defaultLocale}`;
+    return NextResponse.redirect(url, 308);
+  }
+
+  if (localizedLegacyRoutes.has(pathname)) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${defaultLocale}${pathname}`;
+    return NextResponse.redirect(url, 308);
+  }
+
+  if (personalLegacyRoutes.has(pathname)) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${defaultLocale}/card`;
     return NextResponse.redirect(url, 308);
   }
 

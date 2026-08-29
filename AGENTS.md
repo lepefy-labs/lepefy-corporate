@@ -9,7 +9,7 @@ Lepefy Labs is the master brand. The website must present:
 - Lepefy Labs as a builder of intelligent digital products and tailored solutions for real-world needs.
 - Lepefy Commerce as the flagship SaaS platform for modern food businesses.
 - Future products from Lepefy Labs without coupling the corporate brand to a single vertical.
-- The Lepefy Labs Founder profile, with a branded digital business-card experience at `/founder`.
+- A brand-only public identity. Do not expose founder names, personal biographies or personal-profile positioning on the corporate website.
 
 ## Product principles
 
@@ -34,6 +34,15 @@ Lepefy Labs is the master brand. The website must present:
 - Language switching should preserve the current page whenever that localized route exists.
 - Keep each localized page internally consistent. Do not mix French, English and Italian body copy on the same page except product names, trademarks or intentionally untranslated brand terms.
 - Provide hreflang alternates for FR/EN/IT and `x-default` pointing to French.
+
+## Public identity and contact
+
+- Public corporate email: `ciao@lepefy.it`.
+- Public contact identity: **Lepefy Labs**.
+- `/{locale}/card` is the neutral Lepefy Labs digital contact card.
+- `/card.vcf` is the language-neutral downloadable Lepefy Labs vCard with embedded brand image.
+- The digital card and vCard must not expose personal names, founder titles or personal email addresses.
+- Legacy `/founder`, `/founder.vcf`, `/robertin` and `/robertin.vcf` may exist only as backward-compatible redirects to the neutral Lepefy Labs contact card or vCard. They must not expose personal content.
 
 ## Technical direction
 
@@ -61,12 +70,10 @@ Localized public routes live below `/{locale}`:
 - `/{locale}` — Corporate homepage
 - `/{locale}/solutions` — Tailored solutions / methodology
 - `/{locale}/commerce` — Lepefy Commerce
-- `/{locale}/about` — Lepefy Labs and founder
-- `/{locale}/contact` — Contact entry point
-- `/{locale}/founder` — Branded Founder digital business card
-- `/founder.vcf` — Language-neutral downloadable branded Founder vCard
-
-Legacy `/robertin` routes should only exist as redirects for backward compatibility.
+- `/{locale}/about` — Lepefy Labs and company principles
+- `/{locale}/contact` — Corporate contact
+- `/{locale}/card` — Lepefy Labs digital contact card
+- `/card.vcf` — Language-neutral downloadable Lepefy Labs vCard
 
 Do not add speculative product routes until there is enough real content to support them.
 
@@ -77,3 +84,4 @@ Do not add speculative product routes until there is enough real content to supp
 - Keep changes coherent and production-ready rather than leaving placeholder scaffolding.
 - Do not modify payment/business logic in other Lepefy repositories from this repository.
 - Validate TypeScript/build assumptions before claiming a deployment is ready.
+- Prefer one atomic final update to `main` for coordinated release work so the Vercel project receives one final deployment rather than a stream of intermediate deployments.
