@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { headers } from 'next/headers';
 import './globals.css';
 import './i18n.css';
+import './commerce-visuals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.lepefy.com'),
